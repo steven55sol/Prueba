@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.container-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title-header{
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+    font-family: "Balsamiq Sans";
+
+}
+
+.menu{
+    display: flex;
+    z-index: 1;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    margin: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 2s ease-out;
+}
+
+.menu a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.banner{
+    width:100%;
+    height: 500px;
+    background-color: #ccc;
+    margin-top: -50px;
+    background-image: url("../img/2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) , rgba(0,0,0,0.8));
+}
+
+.description-banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: transparent;
+    text-shadow: 0px 0px 5px #000;
+    top: 30%;
+}
+
+.name-description{
+    color: #FF5733;
+    font-family: "Balsamiq Sans";
+    font-size: 40px;
+}
+
+.sub-description{
+    color: #ccc;
+    font-family: "Sriracha";
+}
+
+.img-banner{
+    width: 120px;
+    clip-path: circle(60px at 60px);
+    margin: 0 auto;
+}
