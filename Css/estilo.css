@@ -37,14 +37,13 @@ a{
 }
 
 .menu{
-    display: table;
+    display: flex;
     margin-right: 20px;
     z-index: 1;
 }
 
 li{
     list-style: none;
-    display: inline-block;
 }
 
 li a{
@@ -161,27 +160,26 @@ li a:hover{
 }
 
 .About{
+    display: flex;
     width: 100%;
     background-color: #111;
-    padding: 0px 0px 50px;
+    padding: 30px 0px 50px;
 }
 
 .container-img{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 40%;
     padding: 30px 10px 0px;
 }
 
 .img-a{
     width: 200px;
-    display: table;
-    clip-path:circle(100px at 100px);
 }
 
 .description-about{
-    width: 100%;
-    padding: 0px 0px 20px 0px;
+    width: 70%;
+    padding: 20px 0px 0px 0px;
 }
 
 .title-description{
@@ -240,15 +238,16 @@ li a:hover{
 .content-project{
     width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
     padding: 10px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item{
-    width:100%;
+    width:30%;
     height: 300px;
-    background: red;
     margin: 5px;
     background-color: #fff;
     border-radius: 5px;
@@ -323,6 +322,7 @@ li a:hover{
     background-size: cover;
 }
 .contacto{
+    display: flex;
     position: relative;
     width: 100%;
     background-color: #111;
@@ -330,13 +330,14 @@ li a:hover{
 }
 
 .formulario{
-    width: 90%;
-    margin: 0 auto;
+    width: 33%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     background-color: #fff;;
     border-radius: 5px;
-    padding: 20px;
+    padding:20px;
+    margin-top: 70px;
 }
 
 .title-cont{
@@ -395,141 +396,10 @@ li a:hover{
     outline: none;
 }
 
-@media screen and (min-width:280px){
-    .menu{
-        width: 100%;
-        background-color: #111;
-        margin-right: 0;
-        position: absolute;
-        top: 80px;
-        display: none;
-        
-    }
-    
-    li{
-        display: block;
-    }
-    
-    li a{
-        display: block;
-        padding: 15px;
-    }
-    
-    
-    #menu-icon{
-        width: 50px;
-        margin-right: 20px;
-        display: block;
-    }
-    
-    #close{
-        display: none;
-    }
-    
-    .formulario{
-        width: 95%;
-        height: 500px;
-    }
-    
-}
-
-@media screen and (min-width:728px){
-    .content-project{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .item{
-        width: 45%;
-    }
-    
-    .formulario{
-        width: 500px;
-        height: auto;
-    }
-    
-     .menu{
-        width: 540px;
-        background-color: transparent;
-        top: 20px;
-        right: 20px;
-        display: block;
-    }
-    
-    li{
-        display: inline-block;
-    }
-    
-    li a{
-        padding: 10px 30px;
-    }
-    
-    #menu-icon{
-        display: none;
-    }
-}
-
-
-
-@media screen and (min-width:1024px){
-    
-    .About{
-        display: flex;
-        padding: 80px;
-    }
-    
-    .container-img{
-        width: 40%;
-        padding: 20px;
-    }
-    
-    .img-a{
-        width: 300px;
-        clip-path:none;
-        border-radius: 5px;
-    }
-    
-    
-    .description-about{
-        width: 60%;
-    }
-    
-    .title-description{
-        justify-content: flex-start;
-        margin-left: 42px;
-        padding: 20px 0px;
-    }
-    
-    .content-project{
-        width: 90%;
-        margin: 0 auto;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
-    
-    .item{
-        width: 30%;
-        
-    }
-     .contacto{
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px 20px;
-    }
-    
-    .formulario{
-        width: 35%;
-        height: auto;
-        margin: 0px 10px;
-    }
-    
-    .galery{
+ .galery{
         width: 65%;
         float: right;
+    
     }
     
     .title-galery{
@@ -623,24 +493,153 @@ li a:hover{
     #g6:hover{
         transform: translateY(-5px);
     }
+
+@media screen and (max-width:768px){
     
     .menu{
-        width: 540px;
-        background-color: transparent;
-        top: 20px;
-        right: 20px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 80px;
+        background: #111;
+        margin: 0;
+        transform: translateX(-1000px);
+        transition: all .5s ease-out;
+    }
+    
+    .menu li a{
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu-icon{
+        display: flex;
+    }
+    
+     .abrir{
+        transform: translateX(0px);
+    }
+    
+    .About{
         display: block;
     }
     
-    li{
-        display: inline-block;
+    .img-a{
+        width: 200px;
+        height: 300px;
     }
     
-    li a{
-        padding: 10px 30px;
+    .container-img{
+        width: 100%;
+         justify-content: center;
+        align-items: center;
     }
     
-    #menu-icon{
+    .description-about{
+        width: 100%;
+    }
+    
+    .content-project{
+        width: 95%; 
+    }
+    
+    .item{
+        width: 30%;
+        height: 200px;
+        margin: 5px 5px;
+    }
+    
+    .contacto{
+        justify-content: center;
+    }
+    
+    .galery{
         display: none;
     }
+    
+    .formulario{
+        width: 60%;
+        height: 500px
+    }
 }
+
+@media screen and (max-width:480px){
+    
+    .menu{
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 80px;
+        background: #111;
+        margin: 0;
+        transform: translateX(-450px);
+        transition: all .5s ease-out;
+    }
+    
+    .menu li a{
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu-icon{
+        display: flex;
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .abrir{
+        transform: translateX(0px);
+    }
+    
+    .About{
+        display: block;
+        padding: 0;
+    }
+    .container-img{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-a{
+        clip-path: circle(100px);
+    }
+    
+    .description-about{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .description-content{
+        margin: 0 auto;
+    }
+    
+    .content-project{
+        display: block;
+        
+    }
+    
+    .item{
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .fondo{
+        display: none;
+    }
+    
+    .contacto{
+        display: block;
+    }
+    
+    .galery{
+        display: none;
+    }
+    
+    .formulario{
+        width: 95%;
+        height: 500px;
+        margin: 0 auto;
+    }
+    
+}
+
