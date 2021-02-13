@@ -58,7 +58,7 @@ a{
     color: #fff;
 }
 
-a:hover{
+.btn-cv a:hover{
     background-color: #fff;
     color: #000;
 }
@@ -67,7 +67,7 @@ li{
     list-style: none;
 }
 
-li a{
+.menu li a{
     font-size: 20px;
     color: #fff;
     padding: 10px 20px;
@@ -185,7 +185,7 @@ li a:hover{
     display: flex;
     width: 100%;
     background-color: #111;
-    padding: 30px 0px 50px;
+    padding: 80px 0px 80px;
 }
 
 .container-img{
@@ -393,12 +393,22 @@ li a:hover{
 
 .btn{
     border: none;
-    background-color: #FF5733;
+    background-color: #fff;
+    border: 2px solid  #FF5733;
     padding: 10px;
     font-size: 20px;
     font-family: "Sriracha";
     margin: 15px 0px;
+    border-radius:50px;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FF5733;
+}
+
+.btn:focus{
+    outline: none;
 }
 
 .msg{
@@ -534,7 +544,7 @@ li a:hover{
         margin-right: 0px;
     }
     
-    li a{
+    .menu li a{
         padding: 10px 15px;
     }
      
@@ -654,7 +664,7 @@ li a:hover{
     
      
     .btn-cv a{
-        padding: 10px 40px;
+        padding: 10px 15px;
     }
     
     
