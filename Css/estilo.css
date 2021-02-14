@@ -202,6 +202,7 @@ li a:hover{
 .description-about{
     width: 70%;
     padding: 20px 0px 0px 0px;
+    
 }
 
 .title-description{
@@ -237,7 +238,7 @@ li a:hover{
 .proyectos{
     width: 100%;
     height: auto;
-    background-color: #444;
+    background-color: #fff;
     padding: 30px 0px 0px 0px;
 }
 
@@ -254,7 +255,7 @@ li a:hover{
     padding: 0px 20px;
     font-family: "Balsamiq Sans";
     border-bottom: 4px solid #FF5733;
-    color: #fff;
+    color: #000;
 }
 
 .content-project{
@@ -393,7 +394,7 @@ li a:hover{
 
 .btn{
     border: none;
-    background-color: #fff;
+    background-color: #FF5733;
     border: 2px solid  #FF5733;
     padding: 10px;
     font-size: 20px;
@@ -403,9 +404,6 @@ li a:hover{
     cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #FF5733;
-}
 
 .btn:focus{
     outline: none;
@@ -528,7 +526,7 @@ li a:hover{
 
 .footer{
     width: 100%;
-    background-color: #444;
+    background-color: #fff;
 }
 
 .footer-des{
@@ -548,7 +546,7 @@ li a:hover{
 .datos{
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #000;
     font-size: 20px;
     margin-left: 5px;
     font-family:  "Balsamiq Sans"
@@ -563,27 +561,27 @@ li a:hover{
     width: 100%;
     font-family: "Balsamiq Sans";
     font-weight: 100;
-    background-color: rgba(0,0,0,.5);
+    background-color: #111;
 }
 
 .title-footer{
     padding: 10px;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     font-family: "Balsamiq sans";
 }
 
 .description-footer{
     padding: 10px;
     font-size: 18px;
-    color: #fff;
+    color: #000;
     font-family: "Sriracha";
 }
 
 .title-datos{
     padding: 10px;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     font-family: "Sriracha";
 }
 
@@ -860,7 +858,7 @@ li a:hover{
     
     .container-footer{
         width: 100%;
-        padding: 0px;
+        padding: 4px;
     }
     
     .Datos{
